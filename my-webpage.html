@@ -18,38 +18,49 @@
 @media(min-width:800px){
     .side-bar{
         float: right;
-        width: 85%;
+        width: 78%;
     }
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-    .column {
-        float: left;
-        width: 25%;
-        padding: 0px;
-        margin-right: 100px;
-    }
+
     table {
         font-family: arial, sans-serif;
         width: 50%;
     }
+    .place{
+        float:left;
+        margin: 0em 0em 1em 0em;
+        display: block;
+    }
 }
-.menu {
-    display:flex;
+
+/*@media(max-width:799px){
+    .switch img{
+        float:right;
+        display:block;
+
+    }
+    .switch ul{
+        float:left;
+        display:block;
+    }
+}*/
+.place img{
+    float:left;
+    padding: 0em 1em 0em 0em;
 }
-.menu img {
-    padding: 1em;
+.place ul{
+    padding: 0px;
+}
+.places{
+    margin: 0px;
     display: block;
+}
+.clearfix{
+    overflow:auto;
+    zoom:1;
 }
 .main{
     margin-block-end: 0em;
     margin-block-start: 0em;
-}
-.clearfix{
-    overflow: auto;
-    zoom: 1;
 }
 table {
     font-family: arial, sans-serif;
@@ -123,30 +134,30 @@ camping in the desert and even just sight-seeing in the city.
         <div>
             <h2 style="margin-top: 20px; margin-bottom:10px">Historical places in Cape Town</h2>
         </div>
-        <div class="row">
-            <div class="column menu">
+        <div class="places">
+            <div class="place clearfix">
                 <img src="district.jpg" alt="The District 6 Museum">
-                <p class="column">
-                    The museum was established in 1994.
-                    It was built to commemorate the impoverished District 6.
-                    It is located in the Cape Town CBD.
-                </p>
+                <ul>
+                    <li>The museum was established in 1994.</li>
+                    <li>It was built to commemorate the impoverished District 6.</li>
+                    <li>It is located in the Cape Town CBD.</li>    
+                </ul>
             </div>
-            <div class="column menu">
+            <div  class="place clearfix switch">
                 <img src="hope.jpg" alt="The Castle of Good Hope">
-                <p class="column">
-                    The Castle is known to be the oldest standing building in South Africa.
-                    It was built from 1666 to 1679.
-                    The Castle was built/planned around a well.
-                </p>
+                <ul>
+                    <li>The Castle is known to be the oldest standing building in South Africa.</li>
+                    <li>It was built from 1666 to 1679.</li>
+                    <li>The Castle was built/planned around a well.</li>
+                </ul>
             </div>
-            <div class="column menu">
+            <div class="place clearfix">
                 <img src="townhall.jpg" alt="The Cape Town City Hall" >
-                <p class="column">
-                    City Hall was opened in 1905.
-                    Built from limestone imported from England(honey-colourd oolitic)
-                    The City Hall took 5 years to build.
-                </p>
+                <ul>
+                    <li>City Hall was opened in 1905.</li>
+                    <li>Built from limestone imported from England(honey-colourd oolitic)</li>
+                    <li>The City Hall took 5 years to build.</li>
+                </ul>
             </div>
         </div>
 </body>

@@ -1,12 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="simple-grid.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+<style>
+table {
+    font-family: arial, sans-serif;
+    width: 50%;
+    background-color:honeydew;
+}
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+th{
+    background-color:lightslategray;
+}
+</style>
 </head>
-<body>
-    <h1>grid</h1>
+<body style="background-color: coral">
+    <div class="row">
+        <div class="col-3">
+            <h1 style="font-size:50px; margin-bottom: 0.25px"><u>Dyllan Hope</u></h1>
+        </div>
+        <div class="col-3">
+            <img src="table.jpg" alt="Table Mountain">
+        </div>
+        <div class="col-6">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h3 style="margin-bottom:0.25px">Which city?</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <img style="margin-top:50px" src="DubaiBest.jpg" alt="The Dubai Skyline">
+        </div>
+        <div class="col-3">
+            <h4 style="margin-bottom:0.25px"><u>Dubai</u></h4>
+            <pre style="font-size:15px">Personally I would really enjoy visiting Dubai.
+Dubai has a load of activities one can do. 
+These activities include things like riding ATVs in the desert, 
+Going on top of the tallest building in the world(Burj Khalifa), 
+visit the worlds first and only 7 star hotel(Burj al Arab), 
+camping in the desert and even just sight-seeing in the city.</pre>
+        </div>
+        <div class="col-7">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h3 style="margin-bottom:0.25px">The French language</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <table>
+                <tr>
+                    <th>English</th>
+                    <th>French</th>
+                </tr>
+                <tr>
+                    <td>Hello</td>
+                    <td>Salut/Bonjour</td>
+                </tr>
+                <tr>
+                    <td>How are you?</td>
+                    <td>Ca va?</td>
+                </tr>
+                <tr>
+                    <td>I'm good thank you</td>
+                    <td>Ca va bien merci</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div style="margin-top:0.25px" class="col-12">
+            <h3>Historical places in Cape Town</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="row">
+                <div class="col-6">
+                    <img src="district.jpg" alt="The District 6 Museum">
+                </div>
+                <div class="col-6">
+                    <ul style="font-size:12px">
+                        <li>The museum was established in 1994.</li>
+                        <li>It was built to commemorate the impoverished District 6.</li>
+                        <li>It is located in the Cape Town CBD.</li>    
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-6">
+                    <img src="hope.jpg" alt="The District 6 Museum">
+                </div>
+                <div class="col-6">
+                    <ul style="font-size:12px">
+                        <li>The Castle is known to be the oldest standing building in South Africa.</li>
+                        <li>It was built from 1666 to 1679.</li>
+                        <li>The Castle was built/planned around a well.</li>    
+                    </ul>
+                </div>    
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-6">
+                    <img src="townhall.jpg" alt="The District 6 Museum">
+                </div>
+                <div class="col-6">
+                    <ul style="font-size:12px">
+                        <li>City Hall was opened in 1905.</li>
+                        <li>Built from limestone imported from England(honey-colourd oolitic)</li>
+                        <li>The City Hall took 5 years to build.</li>    
+                    </ul>
+                </div>                    
+            </div>
+        </div>
+    </div>
 </body>
 </html>
