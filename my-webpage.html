@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+    body{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-color:darksalmon;
+    }
+.heading {
+    font-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+@media(min-width:800px){
+    .side-bar{
+        float: right;
+        width: 85%;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .column {
+        float: left;
+        width: 25%;
+        padding: 0px;
+        margin-right: 100px;
+    }
+    table {
+        font-family: arial, sans-serif;
+        width: 50%;
+    }
+}
+.menu {
+    display:flex;
+}
+.menu img {
+    padding: 1em;
+    display: block;
+}
+.main{
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+}
+.clearfix{
+    overflow: auto;
+    zoom: 1;
+}
+table {
+    font-family: arial, sans-serif;
+    width: 50%;
+    background-color:honeydew;
+}
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+th{
+    background-color:lightslategray;
+}
+
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Webpage</title>
+</head>
+<body>
+        <div class="clearfix">
+            <div class="side-bar">
+                <img src="table.jpg" alt="Table Mountain">
+            </div>
+            <div class="heading">
+                <h1 style="margin-bottom:0px">Dyllan</h1>
+                <h1 style="margin-top:0px">Hope</h1>
+            </div>
+        </div>
+        <div class="header">
+            <h2 style="margin-top:30px; margin-bottom:0px">Which city?</h2>
+        </div>
+        <div class="clearfix">
+            <div class="side-bar" >
+                <h3 style="margin-bottom:0px">Dubai</h3>
+                <pre>Personally I would really enjoy visiting Dubai.
+Dubai has a load of activities one can do. 
+These activities include things like riding ATVs in the desert, 
+Going on top of the tallest building in the world(Burj Khalifa), 
+visit the worlds first and only 7 star hotel(Burj al Arab), 
+camping in the desert and even just sight-seeing in the city.
+                </pre>
+            </div>
+            <div>
+                <img style="margin-top:28px"src="DubaiBest.jpg" alt="Dubai city skyline">
+            </div>
+        </div>
+        <div>
+            <h2 style="margin-top: 0px; margin-bottom:10px">The french language</h2>
+            <table>
+                <tr>
+                    <th>English</th>
+                    <th>French</th>
+                </tr>
+                <tr>
+                    <td>Hello</td>
+                    <td>Salut/Bonjour</td>
+                </tr>
+                <tr>
+                    <td>How are you?</td>
+                    <td>Ca va?</td>
+                </tr>
+                <tr>
+                    <td>I'm good thank you</td>
+                    <td>Ca va bien merci</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h2 style="margin-top: 20px; margin-bottom:10px">Historical places in Cape Town</h2>
+        </div>
+        <div class="row">
+            <div class="column menu">
+                <img src="district.jpg" alt="The District 6 Museum">
+                <p class="column">
+                    The museum was established in 1994.
+                    It was built to commemorate the impoverished District 6.
+                    It is located in the Cape Town CBD.
+                </p>
+            </div>
+            <div class="column menu">
+                <img src="hope.jpg" alt="The Castle of Good Hope">
+                <p class="column">
+                    The Castle is known to be the oldest standing building in South Africa.
+                    It was built from 1666 to 1679.
+                    The Castle was built/planned around a well.
+                </p>
+            </div>
+            <div class="column menu">
+                <img src="townhall.jpg" alt="The Cape Town City Hall" >
+                <p class="column">
+                    City Hall was opened in 1905.
+                    Built from limestone imported from England(honey-colourd oolitic)
+                    The City Hall took 5 years to build.
+                </p>
+            </div>
+        </div>
+</body>
+</html>
