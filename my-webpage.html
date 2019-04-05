@@ -27,28 +27,37 @@
     }
     .place{
         float:left;
-        margin: 0em 0em 1em 0em;
+        margin: 5px;
         display: block;
+    }
+    .placeMid{
+        float:left;
+        margin: 5px;
+        display:block;
+    }
+    .placeMid img{
+        float:left;
+        padding-right: 18px
+    }
+}
+@media(max-width:800px){
+    .placeMid img{
+        float: right;
+        padding: 5px;
     }
 }
 
-/*@media(max-width:799px){
-    .switch img{
-        float:right;
-        display:block;
-
-    }
-    .switch ul{
-        float:left;
-        display:block;
-    }
-}*/
 .place img{
     float:left;
     padding: 0em 1em 0em 0em;
 }
-.place ul{
-    padding: 0px;
+.placeMid ul{
+    font-size: 14px;
+    padding-left: 18px
+}
+ul{
+    font-size: 14px;
+    padding-left: 18px;
 }
 .places{
     margin: 0px;
@@ -143,7 +152,7 @@ camping in the desert and even just sight-seeing in the city.
                     <li>It is located in the Cape Town CBD.</li>    
                 </ul>
             </div>
-            <div  class="place clearfix switch">
+            <div  class="placeMid clearfix ">
                 <img src="hope.jpg" alt="The Castle of Good Hope">
                 <ul>
                     <li>The Castle is known to be the oldest standing building in South Africa.</li>

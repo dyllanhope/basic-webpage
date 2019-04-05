@@ -10,16 +10,28 @@
 @media(min-width:800px){
     .place{
         float: left;
-        margin: 0em 0em 1em 0em;
+        margin: 5px;
         display: block
+    }
+    .placeMid{
+        float: left;
+        margin: 5px;
+        display: block
+    }
+    .placeMid img{
+        float: left;
+        padding: 5px;
+    }
+}
+@media(max-width:800px){
+    .placeMid img{
+        float: right;
+        padding: 5px;
     }
 }
 .place img{
     float:left;
-    padding: 0em 1em 0em 0em;
-}
-.place ul{
-    padding: 0px;
+    padding: 5px;
 }
 .places{
     margin: 0px;
@@ -30,7 +42,7 @@
     zoom:1;
 }
 ul{
-    padding: 0px 0px 0px 35px;
+    padding-left: 18px;
     font-size: 14px;
 }
 img{
@@ -119,7 +131,7 @@ camping in the desert and even just sight-seeing in the city.</pre>
         </div>
     </div>
     <div class="places">
-        <div class="place clearfix border">
+        <div class="place clearfix">
             <img src="district.jpg" alt="The District 6 Museum">
             <ul>
                 <li>The museum was established in 1994.</li>
@@ -127,7 +139,7 @@ camping in the desert and even just sight-seeing in the city.</pre>
                 <li>It is located in the Cape Town CBD.</li>    
             </ul>
         </div>
-        <div  class="place clearfix border">
+        <div class="placeMid clearfix">
             <img src="hope.jpg" alt="The Castle of Good Hope">
             <ul>
                 <li>The Castle is known to be the oldest standing building in South Africa.</li>
@@ -135,7 +147,7 @@ camping in the desert and even just sight-seeing in the city.</pre>
                 <li>The Castle was built/planned around a well.</li>
             </ul>
         </div>
-        <div class="place clearfix border">
+        <div class="place clearfix">
             <img src="townhall.jpg" alt="The Cape Town City Hall" >
             <ul>
                 <li>City Hall was opened in 1905.</li>
