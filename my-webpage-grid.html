@@ -5,8 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>My Webpage Grid</title>
 <style>
+@media(min-width:800px){
+    .place{
+        float: left;
+        margin: 0em 0em 1em 0em;
+        display: block
+    }
+}
+.place img{
+    float:left;
+    padding: 0em 1em 0em 0em;
+}
+.place ul{
+    padding: 0px;
+}
+.places{
+    margin: 0px;
+    display: block;
+}
+.clearfix{
+    overflow:auto;
+    zoom:1;
+}
+ul{
+    padding: 0px 0px 0px 35px;
+    font-size: 14px;
+}
+img{
+    width:200px;
+    height:150px;
+    margin: 1em;
+}
+.border{
+    border: 1px solid blue;
+    margin: 0em;
+    padding: 0em;
+}
 table {
     font-family: arial, sans-serif;
     width: 50%;
@@ -24,18 +60,16 @@ th{
 </head>
 <body style="background-color: coral">
     <div class="row">
-        <div class="col-3">
+        <div class="col-4">
             <h1 style="font-size:50px; margin-bottom: 0.25px"><u>Dyllan Hope</u></h1>
         </div>
         <div class="col-3">
             <img src="table.jpg" alt="Table Mountain">
         </div>
-        <div class="col-6">
-        </div>
     </div>
     <div class="row">
         <div class="col-12">
-            <h3 style="margin-bottom:0.25px">Which city?</h3>
+            <h3 style="margin-bottom:0.25px"><u>Which city?</u></h3>
         </div>
     </div>
     <div class="row">
@@ -51,12 +85,10 @@ Going on top of the tallest building in the world(Burj Khalifa),
 visit the worlds first and only 7 star hotel(Burj al Arab), 
 camping in the desert and even just sight-seeing in the city.</pre>
         </div>
-        <div class="col-7">
-        </div>
     </div>
     <div class="row">
         <div class="col-12">
-            <h3 style="margin-bottom:0.25px">The French language</h3>
+            <h3 style="margin-bottom:0.25px"><u>The French language</u></h3>
         </div>
     </div>
     <div class="row">
@@ -83,51 +115,33 @@ camping in the desert and even just sight-seeing in the city.</pre>
     </div>
     <div class="row">
         <div style="margin-top:0.25px" class="col-12">
-            <h3>Historical places in Cape Town</h3>
+            <h3><u>Historical places in Cape Town</u></h3>
         </div>
     </div>
-    <div class="row">
-        <div class="col-4">
-            <div class="row">
-                <div class="col-6">
-                    <img src="district.jpg" alt="The District 6 Museum">
-                </div>
-                <div class="col-6">
-                    <ul style="font-size:12px">
-                        <li>The museum was established in 1994.</li>
-                        <li>It was built to commemorate the impoverished District 6.</li>
-                        <li>It is located in the Cape Town CBD.</li>    
-                    </ul>
-                </div>
-            </div>
+    <div class="places">
+        <div class="place clearfix border">
+            <img src="district.jpg" alt="The District 6 Museum">
+            <ul>
+                <li>The museum was established in 1994.</li>
+                <li>It was built to commemorate the impoverished District 6.</li>
+                <li>It is located in the Cape Town CBD.</li>    
+            </ul>
         </div>
-        <div class="col-4">
-            <div class="row">
-                <div class="col-6">
-                    <img src="hope.jpg" alt="The District 6 Museum">
-                </div>
-                <div class="col-6">
-                    <ul style="font-size:12px">
-                        <li>The Castle is known to be the oldest standing building in South Africa.</li>
-                        <li>It was built from 1666 to 1679.</li>
-                        <li>The Castle was built/planned around a well.</li>    
-                    </ul>
-                </div>    
-            </div>
+        <div  class="place clearfix border">
+            <img src="hope.jpg" alt="The Castle of Good Hope">
+            <ul>
+                <li>The Castle is known to be the oldest standing building in South Africa.</li>
+                <li>It was built from 1666 to 1679.</li>
+                <li>The Castle was built/planned around a well.</li>
+            </ul>
         </div>
-        <div class="col-4">
-            <div class="row">
-                <div class="col-6">
-                    <img src="townhall.jpg" alt="The District 6 Museum">
-                </div>
-                <div class="col-6">
-                    <ul style="font-size:12px">
-                        <li>City Hall was opened in 1905.</li>
-                        <li>Built from limestone imported from England(honey-colourd oolitic)</li>
-                        <li>The City Hall took 5 years to build.</li>    
-                    </ul>
-                </div>                    
-            </div>
+        <div class="place clearfix border">
+            <img src="townhall.jpg" alt="The Cape Town City Hall" >
+            <ul>
+                <li>City Hall was opened in 1905.</li>
+                <li>Built from limestone imported from England(honey-colourd oolitic)</li>
+                <li>The City Hall took 5 years to build.</li>
+            </ul>
         </div>
     </div>
 </body>
